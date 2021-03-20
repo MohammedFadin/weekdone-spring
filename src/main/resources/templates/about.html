@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta content="width=device-width" name="viewport">
+    <link href="/css/style.css" rel="stylesheet">    
+    <title>Weekdone Review!</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Weekdone Review!</h1>
+    </div>
+    <div><p th:text="${aboutinfo}"/></div>
+    <table class="table container table-striped text-center">
+      <thead class="center">
+        <tr>
+          <th scope="col"><p>ID</p></th>
+          <th scope="col"><p class="font-weight-light">Feedback</p></th>
+          <th scope="col"><p class="font-weight-light">Week</p></th>
+        </tr>
+      </thead>
+      <tbody id="weekdone-entries">
+      </tbody>
+    </table>
+    <div id="weekdone-entries">      
+    </div>
+
+    <div>
+      <form id="weekdone-form">
+        <input autocomplete="off" id="weekdone-entry-content" type="text">
+        <a href="#" id="weekdone-submit">Submit</a>
+      </form>
+    </div>
+
+    <div>
+      <h2 id="weekdone-host-address"></h2>
+      <h2 id="status">Backend Server is Online</h2>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
